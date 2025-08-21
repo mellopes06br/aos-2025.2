@@ -9,7 +9,7 @@ console.log("PYTHON_ROOT", process.env.PYTHON_ROOT);
 const app = express();
 
 
-app.get("/", ( res) => {
+app.get("/", (req, res) => {
   res.send("Bem-vindo ao Express de Mel");
 });
 
