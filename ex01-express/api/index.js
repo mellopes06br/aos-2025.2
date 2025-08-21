@@ -1,15 +1,15 @@
 import "dotenv/config";
-import cors from 'cors';
 import express from "express";
 
 
+console.log("Bem-vindo ao Express de Mel");
 console.log("MY_SECRET", process.env.MY_SECRET);
 console.log("PYTHON_ROOT", process.env.PYTHON_ROOT);
 
 const app = express();
 
 
-app.get("/", (req, res) => {
+app.get("/", ( res) => {
   res.send("Bem-vindo ao Express de Mel");
 });
 
