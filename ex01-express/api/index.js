@@ -8,6 +8,8 @@ console.log("PYTHON_ROOT", process.env.PYTHON_ROOT);
 
 const app = express();
 
+app.use(cors());
+
 
 app.get("/", (req, res) => {
   res.send("Bem-vindo ao Express de Mel");
